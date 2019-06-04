@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="menu.css" />
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Cool Eats</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="store.js" async></script>
+    </head>
+    <body>
+       
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="restaurant.html">Restaurants</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <!-- <li><a href="order.html">Order</a></li> -->
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+
+            
+                <form class="search-form">
+                    <input type="text" placeholder="Search">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+        </nav>
+        
+        <section class="container content-section">
+            <h2 class="section-header">McDonalds</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Filet-O-Fish</span>
+                    <img class="shop-item-image" src="img/fish.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3.79</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Fries</span>
+                    <img class="shop-item-image" src="img/fries.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1.89</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Big Mac</span>
+                    <img class="shop-item-image" src="img/bigmac.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+
+                <div class="shop-item">
+                    <span class="shop-item-title">McFlurry</span>
+                    <img class="shop-item-image" src="img/icecream.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">McCafe</span>
+                    <img class="shop-item-image" src="img/icecoffee.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2.49</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">McDouble</span>
+                    <img class="shop-item-image" src="img/burger.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$4.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <a href="checkout.html">
+            	<button class="btn btn-primary btn-purchase" type="button">CHECKOUT</button>
+            </a>
+            
+        </section>
+       
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+			@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+			body {
+  				background-color: #C0C0C0;
+  				font-family: 'Lato', sans-serif;
+			}
+
+			h1 {
+  				background-color: #ffc300;
+			}
+
+			div {
+  				background-color: #FFFFFF;
+			}
+			
+			.menu1 {
+				margin-bottom: 15px;
+				max-width: 1200px;
+    			margin: 0 auto;
+			}
+			.menu1_restName {
+				text-align: center;
+    			font-size: 70px;
+    			margin-top: 0;
+			}
+			.menu1_title {
+				text-align: center;
+			}
+			.menu1_section {
+				margin-bottom: 30px;
+			}
+			.menu1_section h3 {
+				font-style: italic;
+			}
+			.menu1_item {
+				margin: 0 15px;
+				position: relative;
+			}
+			.menu1_item h4 {
+				margin-bottom: 0px;
+			}
+			.price {
+				display: block;
+				float: right;
+				position: absolute;
+				bottom: 0px;
+				right: 0;
+				background-color: white;
+				font-weight: bold;
+			}
+			.description {
+				margin-top: 5px;
+				font-style: italic;
+				background-color: white;
+				display: inline-block;
+				max-width: 50%;
+			}
+			hr {
+				border: none;
+    			border-top: 1px dotted black;
+    			margin-top: -20px;
+			}
+			footer:not(.app-footer) {
+				text-align: center;
+    			font-size: 11px;
+				font-style: italic;
+			}
+			@media (max-width: 575px) {
+				.menu1_title {
+					text-align: center;
+					font-size: 30px;
+				}
+				.menu1_section h3 {
+					text-align: center;
+    				font-size: 30px;
+				}
+				.menu1_item {
+					text-align: center;
+				}
+				.price {
+					float: none;
+					position: static;
+					margin-top: 15px;
+				}
+				hr {
+					display: none;
+				}
+			}
+
+			.menu{
+				
+				width:100%;
+				background:rgba(80,80,80,0.1);
+				overflow:auto;
+				font-color:white;
+			}
+
+			.menu ul{
+				margin:0;
+				padding:0; 
+				list-style:none;
+				line-height:60px;
+			}
+
+			.menu li{
+				float:left;
+			}
+
+			.menu ul li a{
+				text-decoration:none;
+				width:130px;
+				display: block;
+				text-align: center;
+				font-size: 18px;
+				letter-spacing:0px;
+				font-weight: 700;
+				color: white;
+			}
+
+			.menu li a:hover{
+				background:rgba(80,80,80,0.7);
+				font-size: 19px;
+			}
+
+			/*.search-from{
+				margin-top:15px;
+				float:right;
+				margin-right:100px;
+				padding-top: 10px;
+			}*/
+
+			form{
+				float:right;
+				margin-top: 10px;
+				margin-right: 15px;
+			}
+
+			input[type=text]{
+				padding:7px;
+				border:none;
+				font-size: 16px;
+			}
+			button{
+				float:right;
+				color:white;
+				border-radius:0 5px 5px 0;
+				cursor:pointer;
+				position:relative;
+				padding:8px;
+				border:none;
+				font-size: 16px;
+				
+}
+	</style>
+
+	<nav class="menu">
+			<ul>
+				<li><a href="index.html">Welcome</a></li>
+				<li><a href="restaurant.html">Restaurants</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+			</ul>
+
+			
+				<form class="search-form">
+					<input type="text" placeholder="Search">
+					<button><i class="fa fa-search"></i></button>
+				</form>
+		</nav>
+
+<section class="menu1"><h1 class="menu1_restName">McDonalds</h1><h2 class="menu1_title showPreview">Lunch</h2><div class="menu1_section menu1_section_15584077369"><h3>Specials</h3>
+						
+						<div class="menu1_item menu1_item_15584077846">
+							<h4 class="name">McDouble</h4>
+							<span class="price">$2.19</span>
+							<input type="submit" value="ADD" class="btn">
+							<hr>
+						</div>
+					
+						<div class="menu1_item menu1_item_15584078090">
+							<h4 class="name">Fries</h4>
+							<span class="price">$3.19</span>
+							<input type="submit" value="ADD" class="btn">
+
+							<hr>
+						</div>
+					
+						<div class="menu1_item menu1_item_15584078265">
+							<h4 class="name">Burger</h4>
+							<span class="price">$4</span>
+							<input type="submit" value="ADD" class="btn">
+
+							<hr>
+						</div>
+					
+						<div class="menu1_item menu1_item_15584078386">
+							<h4 class="name">Milkshake</h4>
+							<span class="price">$4</span>
+							<input type="submit" value="ADD" class="btn">
+
+							<hr>
+						</div>
+					</div></section><footer class="menu1_containsRaw">*Consuming rtoo much food may result in illnees.</footer>
+
+	<input type="submit" value="CONFIRM Selections" class="btn">
+ -->
+
+
+
+

@@ -1,0 +1,178 @@
+<!--Order Checkout page-->	
+<!--LAB#1 -->	
+<!-- 21st May 2019 
+o Total price of the food
+o Payment details (Debit card, Credit or Cash on delivery)
+o Delivery Address
+o Button – Confirm (It completes the order)
+-->	
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+body {
+  background-color: #C0C0C0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+h1 {
+  background-color: #C0C0C0;
+}
+
+div {
+  background-color: #FFFFFF;
+}
+
+.menu{
+  width:100%;
+  background:rgba(80,80,80,0.1);
+  overflow:auto;
+  font-color:white;
+}
+
+.menu ul{
+  margin:0;
+  padding:0; 
+  list-style:none;
+  line-height:60px;
+}
+
+.menu li{
+  float:left;
+}
+
+.menu ul li a{
+  text-decoration:none;
+  width:130px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing:0px;
+  font-weight: 700;
+  color: white;
+}
+
+.menu li a:hover{
+  background:rgba(80,80,80,0.7);
+  font-size: 19px;
+}
+
+/*.search-from{
+  margin-top:15px;
+  float:right;
+  margin-right:100px;
+  padding-top: 10px;
+}*/
+
+form{
+  float:right;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+input[type=text]{
+  padding:7px;
+  border:none;
+  font-size: 16px;
+}
+button{
+  float:right;
+  color:white;
+  border-radius:0 5px 5px 0;
+  cursor:pointer;
+  position:relative;
+  padding:8px;
+  border:none;
+  font-size: 16px;
+  
+}
+</style>
+<nav class="menu">
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="restaurant.html">Restaurants</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <!-- <li><a href="order.html">Order</a></li> -->
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+
+      
+        <form class="search-form">
+          <input type="text" placeholder="Search">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+    </nav>
+            
+<h3>Food Delivery Address</h3>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="CONFIRM ORDER" class="btn">
+      </form>
+    </div>
+  </div>
+
+      <p>Total <span class="price" style="color:black"><b>$18.5</b></span></p>
+
+</div>
+
+
+</body>
+</html>
