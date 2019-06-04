@@ -9,6 +9,9 @@ o Button – Confirm (It completes the order)
 
 <!DOCTYPE html>
 <html>
+<head>
+  <script src="store.js" async></script>
+<head>
 <body>
 
 <style>
@@ -168,8 +171,13 @@ button{
       </form>
     </div>
   </div>
+  <div class="cart-items"></div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
 
-      <p>Total <span class="price" style="color:black"><b>$18.5</b></span></p>
+      <p>Total <span class="price" style="color:black"><b><script>getTotal()</script></b></span></p>
 
 </div>
 

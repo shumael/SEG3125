@@ -1,3 +1,5 @@
+var complete_total = 0
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -100,7 +102,13 @@ function updateCartTotal() {
         var price = parseFloat(priceElement.innerText.replace('$', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
+        complete_total = total
+        sessionStorage.setItem("total",total);
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + getTotal()
+}
+
+function getTotal(){
+    return sessionStorage.getItem("total");
 }
