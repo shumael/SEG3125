@@ -18,9 +18,7 @@ o Button – Confirm (It completes the order)
   @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
 body {
-  background-color: #C0C0C0;
-  font-family: 'Lato', sans-serif;
-
+  background-image: url("background.png");
 }
 
 h1 {
@@ -72,6 +70,18 @@ div {
   padding-top: 10px;
 }*/
 
+.borderexample {
+ border-style:solid;
+ border-color:#C0C0C0;
+ background:#C0C0C0;
+}
+
+.borderexample2 {
+ border-style:solid;
+ border-color:#C0C0C0;
+ background:#C0C0C0;
+}
+
 form{
   float:right;
   margin-top: 10px;
@@ -111,7 +121,7 @@ button{
         </form>
     </nav>
             
-<h3>Food Delivery Address</h3>
+<h3><p class="borderexample">Food Delivery Address</p></h3>
 
 <div class="row">
   <div class="col-75">
@@ -136,7 +146,7 @@ button{
           </div>
 
           <div class="col-50">
-            <h3>Payment</h3>
+            <h3><p class="borderexample2">Payment</p></h3>
             <label for="fname">Accepted Cards</label>
             <div class="icon-container">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -176,8 +186,6 @@ button{
           <strong class="cart-total-title">Total</strong>
           <span class="cart-total-price">$0</span>
       </div>
-
-      <p>Total <span class="price" style="color:black"><b><script>getTotal()</script></b></span></p>
 
 </div>
 

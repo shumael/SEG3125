@@ -37,7 +37,15 @@ function ready() {
 //     updateCartTotal()
 // }
 
+/**
 
+body {
+  background-color: #C0C0C0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+**/
 
 
 function removeCartItem(event) {
